@@ -15,6 +15,8 @@ const Card = ({user}) => {
                     currentTarget.src=UserIconDefault;
                 }}
                 alt="userImg"
+                width="70"
+                height="70"
             />
             <Text className={classes.CardTitle} p1>
                 <Tooltip tooltipValue={user.name}>{user.name}</Tooltip>
