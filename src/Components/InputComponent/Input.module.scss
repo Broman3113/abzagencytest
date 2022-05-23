@@ -1,0 +1,51 @@
+@import '../../utils/_colors.scss';
+
+$black87: rgba(0, 0, 0, 0.87);
+$error: #CB3D40;
+
+.Wrapper{
+  display: flex;
+  width: 100%;
+  max-width: 380px;
+  position: relative;
+  align-items: center;
+}
+.Input{
+  width: 100%;
+  background: transparent;
+  border: 1px solid #D0CFCF;
+  border-radius: 4px;
+  padding: 15px 14px;
+  outline: none;
+  &Label{
+    position: absolute;
+    left: 15px;
+    color: #7E7E7E;
+    &Active {
+      padding: 0 3px;
+      top: -7px;
+      font-size: 12px;
+      line-height: 14px;
+      transition: all .2s;
+      background: $background;
+    }
+  }
+}
+.HelperText{
+  position: absolute;
+  left: 15px;
+  bottom: -22px;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7E7E7E;
+}
+
+.Error{
+  &Input{
+    border: 1px solid $error;
+    box-shadow: inset 0 0 0 1px $error;
+  }
+  &Label {
+    color: $error;
+  }
+}

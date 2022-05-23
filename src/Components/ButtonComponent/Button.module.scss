@@ -1,0 +1,52 @@
+@import "../../utils/_colors";
+
+.Button {
+  padding: 4px 20px;
+  border-radius: 80px;
+  outline: none;
+  border: none;
+}
+a{
+  color: #000;
+  text-decoration: none;
+}
+
+.yellow {
+  background-color: $primary;
+
+
+  &:hover {
+    background-color: #FFE302;
+  }
+
+  &:disabled {
+    background-color: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+  }
+}
+
+.blue {
+  background-color: $secondary;
+
+  &:hover {
+    background-color: #0051e7;
+  }
+
+  &:disabled {
+    background-color: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+  }
+}
+
+.light-gray {
+  background-color: $background;
+
+  &:hover {
+    background-color: #747474;
+  }
+
+  &:disabled {
+    background-color: #B4B4B4;
+    color: rgba(255, 255, 255, 0.87);
+  }
+}

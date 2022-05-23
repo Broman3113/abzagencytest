@@ -1,0 +1,71 @@
+.GetRequest {
+  &Header {
+    margin: 140px 0 50px;
+  }
+
+  padding-bottom: 144px;
+}
+
+.CardsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+  gap: 29px;
+  margin-bottom: 50px;
+}
+
+.CardWrapper {
+  max-width: 370px;
+  width: 100%;
+
+}
+.hide {
+  display: none;
+}
+// Custom Media
+.Large {
+
+}
+
+.Medium {
+
+  .CardsWrapper {
+    padding: 0 60px;
+  }
+
+  .CardWrapper {
+    max-width: 282px;
+  }
+}
+
+.Small {
+  .CardsWrapper {
+    grid-template-columns: 1fr 1fr;
+    padding: 0 32px;
+    gap: 16px;
+
+  }
+}
+@media (max-width: 460px) {
+  .Small {
+    .CardsWrapper {
+      grid-template-columns: 1fr;
+      padding: 0 16px;
+      gap: 20px;
+    }
+    .GetRequestHeader {
+      padding: 0 16px;
+    }
+  }
+
+}
+.ExtraSmall {
+  .CardsWrapper {
+    grid-template-columns: 1fr;
+    padding: 0 16px;
+    gap: 20px;
+  }
+  .GetRequestHeader {
+    padding: 0 16px;
+  }
+}

@@ -1,0 +1,29 @@
+.Card {
+  background: #fff;
+  padding: 20px;
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  &Img{
+    width: 70px;
+    border-radius: 70px;
+  }
+  &Title{
+    margin: 20px 0 0 0;
+    span {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+    }
+  }
+  &Description{
+    margin: 20px 0 0 0;
+    span {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+    }
+  }
+}
