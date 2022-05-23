@@ -10,7 +10,7 @@ const Header = () => {
     return (
         <div className={[classes.Header, classes[layoutType]].join(' ')}>
             <div className={[classes.wrapperHeader, 'container'].join(' ')}>
-                <img className={classes.Logo} src={Logo} alt="logo"/>
+                <img className={classes.Logo} src={Logo} alt="logo" width="104" height="26"/>
                 <div className={classes.wrapperBtn}>
 
                     <Button classNames={classes.Btn} type="yellow" href="#Users">Users</Button>
